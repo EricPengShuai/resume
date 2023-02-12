@@ -65,7 +65,7 @@
   *流媒体传输，单组播协同，RTMP/RTSP服务器，FLV 封装格式，RPC，HTTP-FLV，QUIC*
 
   - 项目需求：未来网络关键技术项目主要针对直播场景中单组播协同传输进行优化，直播源推送RTMP流到云端节点（librtmp），云端节点通过RTP组播方式分发至各个边缘节点，边缘节点提供 HTTP-FLV 服务供客户端访问，云端节点缓存 FLV 数据，并和边缘节点通过QUIC通信（quic-go），边缘节点检测到掉包是通过 QUIC 请求重传。
-  - 项目职责：本人在其中主要负责云端节点和边缘节点之间的组播传输以及客户端到边缘节点的单播访问，librtmp 库接收 rmtp 流，搭建 RTSP 服务器提供组播功能。
+  - 项目职责：本人在其中主要负责云端节点和边缘节点之间的组播传输以及客户端到边缘节点的单播访问，librtmp 库接收 rtmp 流，搭建 RTSP 服务器提供组播功能。
 
 - **HUAWEI 新媒体项目**
 
@@ -73,7 +73,7 @@
 
   - 项目需求：新媒体项目主要针对虚拟现实场景，设计一套完整的全景视频传输系统，结合视野预测和码率自适应技术优化传输带宽，通过聚类缓存调度策略降低传输时延。
   - 项目职责：本人在其中主要负责**视野预测**模块，设计深度神经网络仿真测试预测结果并通过 Flask 框架部署网络模型提供 API，结合 A-Frame 和 Angular 前端播放界面进行交互。后端通过 gunicorn 增加并发量，经过 wrk 压测 QPS 为 150 左右，较提升之前 QPS 为 20。
-  - 研究成果：基于此发表[期刊](https://doi.org/10.33969/J-NaNA.2021.010401)1篇，CCF-B 会议[论文](https://ieeexplore.ieee.org/document/9859963)1篇。
+  - 研究成果：基于此发表期刊1篇：**Peng S**, Hu J, Xiao H, et al. Viewport-Driven Adaptive 360° Live Streaming Optimization Framework[J]；CCF-B 会议论文1篇：Wang M, **Peng S**, Chen X, et al. CoLive: An Edge-Assisted Online Learning Framework for Viewport Prediction in 360° Live Streaming[C]//2022 ICME. IEEE, 2022: 1-6.
 
 ## <img src="../assets/2-award.svg" width="30px"> 荣誉奖项
 
